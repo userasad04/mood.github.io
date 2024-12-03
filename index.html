@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mood Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Track Your Mood</h1>
+
+    <!-- Mood Selection Section -->
+    <div class="mood-selection">
+      <h3>How are you feeling right now?</h3>
+      <button class="mood-btn happy" data-mood="Happy">😊 Happy</button>
+      <button class="mood-btn sad" data-mood="Sad">😢 Sad</button>
+      <button class="mood-btn neutral" data-mood="Neutral">😐 Neutral</button>
+      <button class="mood-btn angry" data-mood="Angry">😡 Angry</button>
+      <button class="mood-btn excited" data-mood="Excited">😆 Excited</button>
+    </div>
+
+    <!-- Add Notes -->
+    <div class="note-section">
+      <h3>Add a Note</h3>
+      <textarea id="mood-note" placeholder="Write a note about your mood..."></textarea>
+    </div>
+
+    <!-- Mood History Section -->
+    <div class="mood-history">
+      <h3>Your Mood History</h3>
+      <ul id="history-list"></ul>
+    </div>
+
+    <!-- Analysis Section -->
+    <div class="mood-analysis">
+      <h3>Mood Analysis</h3>
+      <p id="analysis-text">Track your moods to see trends here!</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
